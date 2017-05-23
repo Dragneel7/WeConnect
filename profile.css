@@ -1,0 +1,61 @@
+body{
+	padding: 0px;
+	margin: 0;
+}
+div.header{
+	height: 4em;
+	border-bottom: 1px solid black;
+}
+div.cover1{
+	position: absolute;
+	top:4em;
+	width: 99.67%;
+	height: 20em;
+	border:2px solid black;
+}
+img.cover{
+    width: 100%;
+    height: 20em;
+    z-index: -1;
+}
+img.profile{
+    position: absolute;
+    top:10em;
+    width: 10em;
+    height: 9em;
+    border: 2px solid black;
+    margin-left: 1em;
+
+}
+ul{
+	list-style-type: none;
+}
+li.nav_icons{
+	display: inline;
+
+}
+img.nav_img{
+	width:5em;
+	height :auto;
+	border:1px solid black;
+	margin-right: 5px;
+
+
+}
+div.nav{
+	position: absolute;
+    right: 2em;
+    top:0em;
+
+}
+div.logo{
+	width: 10em;
+	border: 1px solid black;
+}
+div.information{
+	border-right: 1px solid black;
+	width: 30%;
+	height: 42.5vh;
+	position:absolute;
+	top:24.2em;
+}

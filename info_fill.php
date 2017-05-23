@@ -26,4 +26,5 @@ $sql="UPDATE newusers SET USER_GENDER='$user_gender',USER_ADDRESS='$user_address
 $conn->close();
 
 
+  header("Location:http://localhost/user_information.php");
 ?>

@@ -1,7 +1,16 @@
+<?php
+session_start();
+$name=$_SESSION["name"];
+$username=$_SESSION["username"];
+$user_interests=$_SESSION["user_interests"];
+$user_photo=$_SESSION["user_photo"];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>WeConnect</title>
+	<link rel="stylesheet" type="text/css" href="profile.css">
 </head>
 <body>
 <div class="header">
@@ -10,19 +19,19 @@
  </div>
  <div class="nav">
  	<ul>
- 		<li><a href="#"><img  class="nav_img" src="#" alt="home"></a></li>
- 	    <li><a href="#"><img  class="nav_img" src="#" alt="home"></a></li>
+ 		<li class="nav_icons"><a href="#"><img  class="nav_img" src="#" alt="home"></a></li>
+ 	    <li class="nav_icons"><a href="#"><img  class="nav_img" src="#" alt="home"></a></li>
  	</ul>
  </div>	
 </div>
-<div class="cover">
+<div class="cover1">
 	<img class="cover" alt="cover pic here" src="#"></img>
-	<img class="profile" alt="profile pic here" src="#"></img>
+	<img class="profile" alt="profile pic here" src="<?php echo($user_photo); ?>"></img>
 </div>
 <div class="information">
-	<h3></h3>
-	<h3></h3>
-	<h3></h3>
+	<h3><?php echo($name); ?></h3><br>
+	<h3><?php echo($username); ?></h3><br>
+	<h3><?php echo($user_interests); ?></h3>
 </div>
 <div class="activities"></div>
 
