@@ -2,10 +2,10 @@
 include('connection.php');
 session_start();
 $username=$_SESSION["username"];
-echo("hello");
+
 
 $sql="SELECT * FROM newusers WHERE USER_NAME='$username' ";
-echo("hi");
+
 $result=$conn->query($sql);
 
   if($result->num_rows>0){
@@ -18,5 +18,11 @@ $result=$conn->query($sql);
     }
   }
   $conn->close();
+  $check=$_SESSION["check"];
+  if($check==1){
+    header("Location:http://localhost/add_profile_pic.php");
+  }
+ else{ 
   header("Location:http://localhost/profile_page.php");
+}
 ?>

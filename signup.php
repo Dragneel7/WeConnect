@@ -46,8 +46,10 @@ if(empty($username)){
 	$x=1;
 }
 
+$password1=md5($password);
+
 if($x==0){
-  $sql = "INSERT INTO newusers(PERSON_NAME,USER_NAME,USER_EMAIL,USER_PASSWORD) VALUES ('$name','$username','$email','$password')";
+  $sql = "INSERT INTO newusers(PERSON_NAME,USER_NAME,USER_EMAIL,USER_PASSWORD) VALUES ('$name','$username','$email','$password1')";
   if($conn->query($sql)==true){
     echo("new record created");
   }
@@ -104,7 +106,7 @@ WeConnect
  		<button class="link" id="sign">SIGNUP</button>
  	<div class="login">
 
- 		<form action="#" method="post">
+ 		<form action="vialogin.php" method="post">
  		<ul>
  			<li class="log_fields"><input type="text" name="username" placeholder="enter your username"></li>
  			<li class="log_fields"><input type="password" name="password" placeholder="enter your password"></li>
