@@ -2,7 +2,7 @@
 
 session_start();
 include('connection.php');
-
+$user_photo = $_SESSION["user_photo"];
 
 
 ?>
@@ -29,9 +29,14 @@ include('connection.php');
 <div class="content">
 <h2> welcome <?php echo($_SESSION["username"]); ?> </h2>
 	<div class="profile_pic">
-		<img class="pr_pic" src="#" alt="profile photo goes here"></img>
-		<button>Add Photo</button>
-	</div>
+		<img class="pr_pic" src= "<?php echo($user_photo); ?>" alt="profile photo goes here"></img>
+		</div>
+
+	<form action="add_profile_pic.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="userphoto" id="userphoto">
+		<input type="submit" value="Add profile pic" name="submit">
+
+	</form>	
 	<form action="info_fill.php" method="post">
 	<div class="details">
 	 <ul>

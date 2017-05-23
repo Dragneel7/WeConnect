@@ -54,6 +54,13 @@ if($x==0){
   else{
     echo("error").$conn->error;
   }
+  $sql1= "SELECT  USER_PHOTO FROM newusers WHERE USER_NAME='$username' ";
+  $result = $conn->query($sql1);
+  if($result->num_rows>0){
+    while($row=$result->fetch_assoc()){
+      $_SESSION["user_photo"]=$row["USER_PHOTO"];
+    }
+  }
 $conn->close();
 header("Location:http://localhost/profile_fill.php");
 }
