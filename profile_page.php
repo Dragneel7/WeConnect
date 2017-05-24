@@ -4,6 +4,7 @@ $name=$_SESSION["name"];
 $username=$_SESSION["username"];
 $user_interests=$_SESSION["user_interests"];
 $user_photo=$_SESSION["user_photo"];
+
 ?>
 
 <!DOCTYPE html>
@@ -19,8 +20,8 @@ $user_photo=$_SESSION["user_photo"];
  </div>
  <div class="nav">
  	<ul>
- 		<li class="nav_icons"><a href="#"><img  class="nav_img" src="#" alt="home"></a></li>
- 	    <li class="nav_icons"><a href="#"><img  class="nav_img" src="#" alt="home"></a></li>
+ 		<li class="nav_icons"><a href="#"><img  class="nav_img" src="#" alt="log out"></a></li>
+ 	    <li class="nav_icons"><a href="user_settings.php"><img  class="nav_img" src="#" alt="settings"></a></li>
  	</ul>
  </div>	
 </div>

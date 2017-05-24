@@ -5,6 +5,7 @@ include('connection.php');
 $user_photo = $_SESSION["user_photo"];
 
 
+
 ?>
 <!DOCTYPE html>
 <html>
