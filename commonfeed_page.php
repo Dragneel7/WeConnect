@@ -61,7 +61,7 @@ $user_photo=$_SESSION["user_photo"];
     	<h3>CURRENT USERS</h3>
     	         
     	     <p>    <?php
-    	     $link="profile_page.php";
+    	     $link="personel_chat.php";
  		   
  		    include('connection.php');
  		   $sql1 = "SELECT USER_NAME,USER_PHOTO from newusers";
@@ -69,11 +69,13 @@ $user_photo=$_SESSION["user_photo"];
  		   if($result1->num_rows>0){
  		   	
  		   	while($row=$result1->fetch_assoc()){
-             echo "<a href=".$link.">"."<img src= '".$row["USER_PHOTO"]."'/>".$row["USER_NAME"]."</a>"."<br>"."<br>"."<br>";
+             echo "<a href=".$link.">"."<img src= '".$row["USER_PHOTO"]."'/>".$_SESSION["user"]=$row["USER_NAME"]."</a>"."<br>"."<br>"."<br>";
+
                
  		   		
 
  		   	}
+
  		   }
 
 

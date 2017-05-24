@@ -4,7 +4,7 @@ session_start();
 $username=$_SESSION["username"];
 $check=$_POST["check"];
 $friend_name=$_POST["user_search_name"];
-
+$_SESSION["chat"]=$check;
 if($check==1){
   $sql1="SELECT * FROM newusers WHERE USER_NAME='$friend_name' ";
 
