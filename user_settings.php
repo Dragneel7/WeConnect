@@ -1,6 +1,13 @@
 <?php
+
+if(!isset($_SESSION["username"])){
+	header("Location:http://localhost/signup.php");
+}
+
 include('connection.php');
 session_start();
+
+
 $_SESSION["change"]=1;
 $username=$_SESSION["username"];
 
