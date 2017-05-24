@@ -9,6 +9,7 @@ echo($user_DOB);
 $user_interests= test_input($_POST["interests"]);
 $username=$_SESSION["username"];
 
+
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -23,8 +24,11 @@ $sql="UPDATE newusers SET USER_GENDER='$user_gender',USER_ADDRESS='$user_address
   else{
     echo("error").$conn->error;
   }
+
+
 $conn->close();
 
 
-  header("Location:http://localhost/user_information.php");
+  header("Location:http://localhost/commonfeed_page.php");
+  
 ?>

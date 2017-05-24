@@ -17,12 +17,10 @@ $result=$conn->query($sql);
 
     }
   }
-  $conn->close();
+
   $check=$_SESSION["check"];
-  if($check==1){
-    header("Location:http://localhost/add_profile_pic.php");
-  }
- else{ 
+  
+ 
   header("Location:http://localhost/profile_page.php");
-}
+
 ?>

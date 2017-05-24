@@ -32,6 +32,7 @@ $user_photo=$_SESSION["user_photo"];
 	<h3><?php echo($name); ?></h3><br>
 	<h3><?php echo($username); ?></h3><br>
 	<h3><?php echo($user_interests); ?></h3>
+	<a href="commonfeed_page.php"><h2>common feed</h2></a>
 </div>
 <div class="activities"></div>
 

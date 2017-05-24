@@ -1,0 +1,62 @@
+body{
+	padding: 0;
+	margin:0;
+}
+div.header{
+	height: 4em;
+	border-bottom: 1px solid black;
+}
+ul{
+	list-style-type: none;
+}
+li.nav_icons{
+	display: inline;
+
+}
+img.nav_img{
+	width:5em;
+	height :auto;
+	border:1px solid black;
+	margin-right: 5px;
+
+
+}
+div.nav{
+	position: absolute;
+    right: 2em;
+    top:0em;
+
+}
+div.logo{
+	width: 10em;
+	border: 1px solid black;
+}
+div.currentuser{
+	position: absolute;
+	top:4em;
+	right: 8em;
+	border-left: 2px solid black;
+	height: 90vh;
+
+}
+img.profile_pic{
+	border: 1px solid black;
+	width: 5em;
+	height: 4em;
+	margin-left: 1em;
+}
+div.feed{
+	width: 40vw;
+	height: 50vh;
+	border: 2px solid black;
+	overflow-y: scroll;
+}
+div.comment{
+	position: absolute;
+	top:10em;
+	left: 1em;
+}
+div.sub{
+	position: relative;
+	top:1em;
+}
