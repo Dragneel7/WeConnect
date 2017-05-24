@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 include('connection.php');
 $user_gender= test_input($_POST["gender"]);
 $user_address= test_input($_POST["address"]);

@@ -1,12 +1,10 @@
 <?php
-if(!isset($_SESSION["username"])){
-	header("Location:http://localhost/signup.php");
-}
+
 session_start();
 
 
 $name=$_SESSION["name"];
-$username=$_SESSION["username"];
+$username=$_SESSION["username1"];
 $user_interests=$_SESSION["user_interests"];
 $user_photo=$_SESSION["user_photo"];
 

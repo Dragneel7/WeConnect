@@ -34,7 +34,7 @@ div.logo{
 div.currentuser{
 	position: absolute;
 	top:4em;
-	right: 8em;
+	right: 10em;
 	border-left: 2px solid black;
 	height: 90vh;
 
@@ -59,4 +59,16 @@ div.comment{
 div.sub{
 	position: relative;
 	top:1em;
+}
+div.search_user{
+	border-top:1px solid black;
+	width: 19vw;
+	position: absolute;
+	bottom: 2em;
+	right: 0;
+}
+.search{
+	position: relative;
+	top:.5em;
+	left: 1.5em;
 }

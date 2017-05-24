@@ -1,9 +1,7 @@
 <?php
 
 
-if(!isset($_SESSION["username"])){
-	header("Location:http://localhost/signup.php");
-}
+
 
 session_start();
 include('connection.php');
@@ -59,7 +57,15 @@ $user_photo=$_SESSION["user_photo"];
     </div>
 </div>    
     <div class="currentuser"><a href="http://localhost/user_information.php"> <img class="profile_pic" src="<?php echo($user_photo); ?>" alt="currrent user profile pic"> <h2><?php echo($username); ?></h2></a></div>
-    <div class="active users"></div>
+    <div class="users"></div>
+    <div class="search_user">
+    	<form method="post" action="user_information.php">
+    	
+    		<input class="search" type="text" name="user_search_name" placeholder="search for a user" >
+    		<input class="search" type="hidden" name="check" value="1">
+    		<input class="search" type="submit" name="submit" value="go">
+    	</form>
+    </div>
 </div>
 </body>
 </html>
